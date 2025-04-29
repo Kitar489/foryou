@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>ง้อคนชื่อเเพร</title>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">เลิกงอนผมได้ ยางงง?</span>
+      <img id="mainImage" src="sss.png" alt="Do you?" />
+
+      <!-- ปุ่มกด -->
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('qqq.png')"
+          onmouseout="resetImage()"
+          onclick="handleNoClick()"
+        >
+          ไม่
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('www.png')"
+          onmouseout="resetImage()"
+          onclick="showPage('lovePage')"
+        >
+          เลิกเเล้ว
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้ากด รักกกก -->
+    <div id="lovePage" class="container hidden">
+      <h1>คนชื่อเเพร ใจดีมากเลย</h1>
+      <img src="eee.png" alt="❤️" class="m1"/>
+    </div>
+
+    <!-- หน้าถ้ายังจะกด No เรื่อยๆ  -->
+    <div id="noPage" class="container hidden">
+      <img src="qqq.png" alt="Die" />
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html
